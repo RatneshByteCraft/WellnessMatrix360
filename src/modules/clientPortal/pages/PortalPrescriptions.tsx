@@ -1,0 +1,3 @@
+import { PageHeader, Card, Badge, PrimaryButton } from '../../../shared/components/ui'
+export default function PortalPrescriptions(){return <><PageHeader title="My Prescriptions" subtitle="Current medication cards, instructions and refill requests"/>
+<div className="module-grid">{[['Sertraline','50 mg','09:00','After breakfast'],['Quetiapine','25 mg','21:00','At bedtime']].map(m=><Card key={m[0]}><Badge tone="success">Active</Badge><h2>{m[0]}</h2><h3>{m[1]}</h3><p><strong>{m[2]}</strong> • {m[3]}</p><p className="muted">Side-effect information and warnings displayed as prescribed/configured.</p><PrimaryButton>Request Refill</PrimaryButton></Card>)}</div></>}
