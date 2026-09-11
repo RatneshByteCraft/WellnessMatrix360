@@ -9,11 +9,11 @@ import Placeholder from '../../modules/common/pages/Placeholder'
 export function AppRoutes(){
    return <Routes>
     <Route path="/" element={<Navigate to="/login" replace />} />
-    <AuthRoutes />
-    <PlatformRoutes />
-    <TenantAdminRoutes />
-    <StaffRoutes />
-    <PortalRoutes />
+   {AuthRoutes()}
+   {PlatformRoutes()}
+   {TenantAdminRoutes()}
+   {StaffRoutes()}
+   {PortalRoutes()}
     <Route path="*" element={<Placeholder />} />
    </Routes>
 }
