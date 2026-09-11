@@ -1,3 +1,0 @@
-import { PageHeader, PrimaryButton, Card, Badge } from '../../../shared/components/ui'
-export default function Packages(){return <><PageHeader title="Treatment Packages" subtitle="Reusable commercial packages; no duplicated pricing inside admission records" actions={<PrimaryButton>+ Add Package</PrimaryButton>}/>
-<div className="module-grid">{[['10-Day Detox','₹1,25,000','Active'],['15-Day Detox','₹1,75,000','Active'],['30-Day Residential','₹3,60,000','Draft']].map(p=><Card key={p[0]}><h3>{p[0]}</h3><h2>{p[1]}</h2><Badge tone={p[2]==='Active'?'success':'neutral'}>{p[2]}</Badge><p className="muted">Room, core consultations and configured inclusions.</p></Card>)}</div></>}

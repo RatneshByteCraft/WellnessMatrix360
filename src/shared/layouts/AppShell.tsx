@@ -25,7 +25,7 @@ export function AppShell(){
   const [open,setOpen]=useState(false)
   return <div className="app-shell">
     <aside className={`sidebar ${open?'open':''}`}>
-      <div className="brand"><div className="brand-mark">WM</div><div><strong>WellnessMatrix360</strong><small>Veda Wellness</small></div><button className="icon-btn mobile-close" onClick={()=>setOpen(false)}><X/></button></div>
+      <div className="brand"><div className="brand-mark">MP</div><div><strong>Medixpro360-Rehab</strong><small>Veda Wellness</small></div><button className="icon-btn mobile-close" onClick={()=>setOpen(false)}><X/></button></div>
       <nav>
         <div className="nav-section">Workspace</div>
         {nav.map(({to,label,icon:Icon})=><NavLink to={to} key={to} onClick={()=>setOpen(false)} className={({isActive})=>isActive?'active':''}><Icon size={19}/><span>{label}</span></NavLink>)}

@@ -1,4 +1,4 @@
-# WellnessMatrix360 UI Foundation
+# Medixpro360-Rehab UI Foundation
 
 Enterprise-grade React + TypeScript UI starter for a multi-tenant rehabilitation / wellness management platform.
 

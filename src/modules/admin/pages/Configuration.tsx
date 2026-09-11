@@ -1,3 +1,0 @@
-import { PageHeader } from '../../../shared/components/ui'
-export default function Configuration(){return <><PageHeader title="Configuration" subtitle="Centralized masters and tenant settings to avoid duplicated lookup maintenance"/>
-<div className="module-grid">{['Master Lookups','Form & Consent Templates','Assessment Scales','Therapy Types','Notification Templates','Numbering & Document Settings','Billing & Tax Settings','Branding & Portal Settings'].map(x=><div className="module-card" key={x}><strong>{x}</strong><span>Manage centrally and reference from feature modules.</span></div>)}</div></>}
